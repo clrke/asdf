@@ -1,0 +1,13 @@
+<html>
+	<head> <title>Asdf</title></head>
+	<body>
+		<h1>{{message}}</h1>
+		<ul>
+			{% for activity in activities %}
+				<li> {{ activity.activity }}</li>
+			{% empty %}
+				<li> Sorry. No data</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>
