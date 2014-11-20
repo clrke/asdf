@@ -10,6 +10,6 @@ def home(request):
 def home2(request):
 	activities = requests.get('http://student-journal.eu1.frbit.net/activities').json()
 	message = "Hello two"
-	
+
 	return compact('activities', 'message')
-	
+
